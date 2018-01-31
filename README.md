@@ -35,14 +35,14 @@ Install cython
 
 Install the repo
     
-    pip install git+https://github.com/izderadicka/pdfparser
+    pip install git+https://github.com/max-ionov/pdfparser
 
 ### CentOS 7 - self compiled method
 
 Clone this repo and enter into the root folder
 
     cd /git/repos/
-    git clone https://github.com/izderadicka/pdfparser.git
+    git clone https://github.com/max-ionov/pdfparser.git
     cd pdfparser
 
 Clone the poppler repo and install (similar to build_poppler.sh)
@@ -61,7 +61,7 @@ Clone the poppler repo and install (similar to build_poppler.sh)
 ### Debian like - self compiled method (with local poppler library)
  
 ```
-git clone --depth 1 https://github.com/izderadicka/pdfparser.git
+git clone --depth 1 https://github.com/max-ionov/pdfparser.git
 cd pdfparser
 ./build_poppler.sh
 pip install cython
@@ -75,7 +75,13 @@ python tests/dump_file.py test_docs/test1.pdf
 sudo apt-get update
 sudo apt-get install -y libpoppler-private-dev libpoppler-cpp-dev
 pip install cython
-pip install git+https://github.com/izderadicka/pdfparser
+pip install git+https://github.com/max-ionov/pdfparser
+```
+
+### Mac OS
+```
+pip install cython
+pip install git+https://github.com/max-ionov/pdfparser
 ```
     
 
